@@ -33,12 +33,14 @@ export default function App() {
   console.log('sdf', count, setScore(40));
 
   const onClickHandler = (e) => {
-    console.log(e);
     setItems(...items, arr);
   };
 
   console.log(items);
   console.log('local', localStorage.getItem('items'));
+
+  // const localStorageItems = JSON.parse(localStorage.getItem('items'));
+  // console.log(localStorageItems);
 
   return (
     <div>
